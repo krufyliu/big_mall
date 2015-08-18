@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+  # divise_for :user
+  namespace 'user', path: '', as: '' do
+    devise_for :users, path: ''
+  end
+
+  # devise_for :admin, controllers: {sessions: 'admin/sessions'}
+  namespace 'admin', as: '' do
+    devise_for :admin, path: ''
+  end
+  namespace 'admin' do
+    root 'home#index'
+  end
+
+  # devise_for :merchant, controllers: {sessions: 'merchat/sessions'}
+  namespace 'merchant', as: '' do
+    devise_for :merchant, path: ''
+  end
+  namespace 'merchant' do
+    root 'home#index'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
