@@ -14,5 +14,5 @@
 .DS_Store
 *.swp
 *.swo
-.gitignore
+/gulp/dist
 /gulp/node_modules
