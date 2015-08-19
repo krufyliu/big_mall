@@ -1,26 +1,45 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>login</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track' => true %>
+  </head>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+  <body class="login1">
+    <!-- Login Screen -->
+    <div class="login-wrapper">
+      <div class="login-container active">
+        <a href="index.html">
+          <%= image_tag 'ruby.png', width: '98', height: '112' %>
+        </a>
+        <form action="index.html">
+          <div class="form-group">
+            <input class="form-control" placeholder="Username or Email" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Password" type="text">
+            <input type="submit" value="">
+          </div>
+          <div class="form-options clearfix">
+            <a class="pull-right" href="#">Forgot password?</a>
+            <div class="text-left">
+              <label class="checkbox">
+                <input type="checkbox"><span>Remember me</span></label>
+            </div>
+          </div>
+        </form>
+        <p class="signup">
+          Don't have an account yet? <a href="signup.html">Sign up now</a>
+        </p>
+      </div>
     </div>
-  <% end -%>
+    <!-- End Login Screen -->
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+    <!-- Script -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!-- End Script -->
+  </body>
 
-<%= render "merchant/shared/links" %>
+</html>

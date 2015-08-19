@@ -9,3 +9,11 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+# Add the fonts path
+Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'stylesheets')
+Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'javascripts')
+Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'images')
+Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'fonts')
+# Precompile additional assets
+Rails.application.config.assets.precompile += %w( .svg .eot .woff .ttf )
+Rails.application.config.assets.precompile += %w( style.css )
