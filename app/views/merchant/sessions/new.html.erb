@@ -4,35 +4,36 @@
     <meta charset="utf-8" />
     <title>login</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'custom', media: 'all', 'data-turbolinks-track' => true %>
   </head>
 
   <body class="login1">
+    <%= flash_block %>
     <!-- Login Screen -->
     <div class="login-wrapper">
       <div class="login-container active">
-        <a href="index.html">
+        <a href="<%= merchant_root_path %>">
           <%= image_tag 'ruby.png', width: '98', height: '112' %>
         </a>
-        <form action="index.html">
+        <%= form_for(resource, as:resource_name, url: merchant_session_path) do |f| %>
+          <%= devise_error_messages! %>
           <div class="form-group">
-            <input class="form-control" placeholder="Username or Email" type="text">
+            <%= f.text_field :signin, class: 'form-control', placeholder: '用户名或邮箱' %>
           </div>
           <div class="form-group">
-            <input class="form-control" placeholder="Password" type="text">
-            <input type="submit" value="">
+            <%= f.password_field :password, class: 'form-control', placeholder: '密码' %>
+            <%= f.submit "" %>
           </div>
           <div class="form-options clearfix">
-            <a class="pull-right" href="#">Forgot password?</a>
+            <%= link_to '忘记密码', '#', class: 'pull-right' %>
             <div class="text-left">
-              <label class="checkbox">
-                <input type="checkbox"><span>Remember me</span></label>
+              <%= f.label :remember_me, class: 'checkbox' do %>
+                <%= f.check_box :remember_me %>
+                <span>记住我</span>
+              <% end %>
             </div>
           </div>
-        </form>
-        <p class="signup">
-          Don't have an account yet? <a href="signup.html">Sign up now</a>
-        </p>
+        <% end %>
       </div>
     </div>
     <!-- End Login Screen -->

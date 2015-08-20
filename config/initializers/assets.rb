@@ -15,5 +15,8 @@ Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'java
 Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'images')
 Rails.application.config.assets.paths << Rails.root.join('gulp', 'assets', 'fonts')
 # Precompile additional assets
-Rails.application.config.assets.precompile += %w( .svg .eot .woff .ttf )
-Rails.application.config.assets.precompile += %w( style.css )
+gulp_precompile_path = lambda do |filename, path|
+  path =~ /gulp\/assets/ && !%w(.js .css).include?(File.extname(filename))
+end
+Rails.application.config.assets.precompile << gulp_precompile_path
+Rails.application.config.assets.precompile += %w( custom.css )
