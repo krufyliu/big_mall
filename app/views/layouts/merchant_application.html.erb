@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mall</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<h1>Merchant</h1>
-<%= yield %>
+  <head>
+    <meta charset="utf-8" />
+    <title>login</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'custom', media: 'all', 'data-turbolinks-track' => true %>
+  </head>
 
-</body>
+  <body>
+    <div class="modal-shiftfix">
+      <!-- Navigation -->
+      <div class="navbar navbar-fixed-top scroll-hide" style="overflow: visible;">
+        <%= render 'layouts/top_bar' %>
+        <%= render 'layouts/main_nav' %>
+      </div>
+      <!-- End Navigation -->
+      <%= yield %>
+    </div>
+
+    <!-- Script -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!-- End Script -->
+    <script>
+      /*
+      # =============================================================================
+      #   Mobile Nav
+      # =============================================================================
+      */
+      $('.navbar-toggle').click(function() {
+        return $('body, html').toggleClass("nav-open");
+      });
+    </script>
+    <!-- End Script -->
+  </body>
 </html>

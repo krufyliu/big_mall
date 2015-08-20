@@ -4,6 +4,8 @@ class Merchant < ActiveRecord::Base
   self.table_name = 'users'
   @@role = 'merchant'
 
+  attr_accessor :signin
+
   devise :database_authenticatable,
          :rememberable, :trackable,
          :validatable
@@ -13,5 +15,14 @@ class Merchant < ActiveRecord::Base
 
   before_create do
     self.role = @@role
+  end
+
+  def self.find_first_by_auth_conditions(warden_conditions)
+    conditions = warden_conditions.dup
+    if signin = conditions.delete(:signin)
+      where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => signin.downcase }]).first
+    else
+      where(conditions).first
+    end
   end
 end

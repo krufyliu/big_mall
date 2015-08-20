@@ -1,2 +1,2 @@
-class Merchant::HomeController < ApplicationController
+class Merchant::HomeController < Merchant::ApplicationController
 end

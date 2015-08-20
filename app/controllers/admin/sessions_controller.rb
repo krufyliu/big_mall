@@ -1,6 +1,5 @@
 class Admin::SessionsController < Devise::SessionsController
 # before_filter :configure_sign_in_params, only: [:create]
-  layout false, only[:new]
   # GET /resource/sign_in
   # def new
   #   super

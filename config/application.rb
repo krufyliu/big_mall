@@ -21,6 +21,7 @@ module Mall
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.web_console.whitelisted_ips = '10.0.2.2'
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
