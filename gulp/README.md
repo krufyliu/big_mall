@@ -45,7 +45,7 @@
 #scss文件规范以及说明
 1.各个小模块以下划线开头全小写命名，多单词以 `-` 符号分隔，总模块正常以该模块文件夹命名，在其中导入需要的小模块，例：
 
-```
+```ruby
   font-awesome
     _animated.scss
     _bordered-pulled.scss
@@ -54,12 +54,12 @@
     _icons.scss
     _larger.scss
     _list.scss
-    _mixins.scss
-    _path.scss
+    _mixins.scss                  //预编译文件
+    _path.scss                    //资源路径配置
     _rotated-flipped.scss
     _stacked.scss
-    _variables.scss
-    font-awesome.scss
+    _variables.scss               //变量定义
+    font-awesome.scss             //总模块文件
 
 ```
 
