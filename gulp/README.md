@@ -21,16 +21,16 @@
   ``` 
 
   * sass的编译 (`gulp-ruby-sass`)
-  * 自动添加css前缀(`gulp-autoprefixer`)
-  * 压缩css(`gulp-minify-css`)
-  * js代码校验(`gulp-jshint`)
-  * 合并js文件(`gulp-concat`)
-  * 压缩js代码(`gulp-uglify`)
-  * 压缩图片(`gulp-imagemin`)
-  * 自动刷新页面(`gulp-livereload`)
-  * 图片缓存，只有图片替换了才压缩(`gulp-cache`)
-  * 更改提醒(`gulp-notify`)
-  * 清除文件(`del`)
+  * 自动添加css前缀（`gulp-autoprefixer`）
+  * 压缩css（`gulp-minify-css`）
+  * js代码校验（`gulp-jshint`）
+  * 合并js文件（`gulp-concat`）
+  * 压缩js代码（`gulp-uglify`）
+  * 压缩图片（`gulp-imagemin`）
+  * 自动刷新页面（`gulp-livereload`）
+  * 图片缓存，只有图片替换了才压缩（`gulp-cache`）
+  * 更改提醒（`gulp-notify`）
+  * 清除文件（`del`）
   
   
 5.运行task任务
@@ -39,10 +39,30 @@
     $ gulp
   ```
   
-  实时编译
-  
-  ```console
-    $ gulp watch
-  ```
-  
 6.gulp的API请查看gulpfile.js文件
+
+
+#scss文件规范以及说明
+1.各个小模块以下划线开头全小写命名，多单词以 `-` 符号分隔，总模块正常以该模块文件夹命名，在其中导入需要的小模块，例：
+
+```
+  font-awesome
+    _animated.scss
+    _bordered-pulled.scss
+    _core.scss
+    _fixed-width.scss
+    _icons.scss
+    _larger.scss
+    _list.scss
+    _mixins.scss
+    _path.scss
+    _rotated-flipped.scss
+    _stacked.scss
+    _variables.scss
+    font-awesome.scss
+
+```
+
+2.自定义变量放置在 `_variables.scss` 文件中
+
+3.资源路径配置在 `_path.scss` 文件中
