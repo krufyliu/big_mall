@@ -4,6 +4,7 @@
 ```js
   assets  //项目引用资源目录
   dev     //静态资源开发目录
+  dist    //静态资源引用目录
   gulpfile.js   //gulpAPI文件
 ```
 
@@ -45,6 +46,12 @@
 
  ```console
     $ gulp
+  ```
+  
+  监听文档实现实时编译
+  
+  ```console
+    $ gulp watch
   ```
   
 6.gulp的API请查看gulpfile.js文件
