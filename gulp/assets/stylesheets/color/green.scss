@@ -1,0 +1,62 @@
+@import "variables";
+a {
+  color: $green; }
+
+.navbar .container-fluid.top-bar form .form-control:focus {
+  border-color: $green; }
+
+.navbar .container-fluid.top-bar .nav > li.open > a span, .navbar .container-fluid.top-bar .nav > li.active > a span, .navbar .container-fluid.top-bar .nav > li.open.active > a span {
+  color: $green; }
+
+.navbar .container-fluid.main-nav .nav-collapse .nav > li a.current span {
+  color: $green; }
+.navbar .container-fluid.main-nav .nav-collapse .nav > li a.current .caret {
+  border-top-color: $green; }
+
+.navbar .container-fluid.main-nav .nav-collapse .nav > li > a.current {
+  color: $green; }
+
+.widget-container .heading {
+  color: $green; }
+
+.dropdown-menu li a:hover {
+  border-bottom-color: $green;
+  color: $green; }
+
+.form-control:focus {
+  border-color: $green; }
+
+.stats-container [class^="col-"] .number, .stats-container [class*="col-"] .number {
+  color: $green; }
+
+.stats-container [class^="col-"] .number .icon, .stats-container [class*="col-"] .number .icon {
+  background-position: left -38px; }
+  .stats-container [class^="col-"] .number .icon.visitors, .stats-container [class*="col-"] .number .icon.visitors {
+    background-position: -50px -38px; }
+  .stats-container [class^="col-"] .number .icon.money, .stats-container [class*="col-"] .number .icon.money {
+    background-position: -100px -38px; }
+  .stats-container [class^="col-"] .number .icon.chat-bubbles, .stats-container [class*="col-"] .number .icon.chat-bubbles {
+    background-position: -150px -38px; }
+
+.task-widget input[type="checkbox"]:checked + .task-checkbox {
+  color: $green; }
+
+.select2-container-active .select2-choice, .select2-container-active .select2-choices {
+  border-color: $green; }
+
+.select2-container-multi.select2-container-active .select2-choices {
+  border-color: $green; }
+
+.select2-drop-active {
+  border-color: $green; }
+
+.dataTable th {
+  color: $green; }
+  .dataTable th.sorting:after {
+    border-top: 5px solid $green; }
+  .dataTable th.sorting:before {
+    border-bottom: 5px solid $green; }
+  .dataTable th.sorting_asc:after {
+    border-bottom: 5px solid $green; }
+  .dataTable th.sorting_desc:after {
+    border-top: 5px solid $green; }
