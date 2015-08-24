@@ -3674,15 +3674,15 @@ body.fourofour .fourofour-container a.btn:hover {
   .container-fluid.main-content {
     position: relative;
     left: 0;
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    transition: left 0.3s;
+    -webkit-transition: left 0.1s;
+    -moz-transition: left 0.1s;
+    transition: left 0.1s;
   }
   .navbar {
     height: 45px !important;
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    transition: left 0.3s;
+    -webkit-transition: left 0.1s;
+    -moz-transition: left 0.1s;
+    transition: left 0.1s;
   }
   .navbar .container-fluid.top-bar {
     border-bottom: 0;
@@ -3699,9 +3699,9 @@ body.fourofour .fourofour-container a.btn:hover {
     width: 240px;
     background: #dddddd;
     box-shadow: inset -4px 0 0 rgba(0, 0, 0, 0.05);
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    transition: left 0.3s;
+    -webkit-transition: left 0.1s;
+    -moz-transition: left 0.1s;
+    transition: left 0.1s;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
   }
