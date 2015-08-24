@@ -1,5 +1,13 @@
 #前端代码说明v1.0.0
 
+##目录结构说明
+```js
+  assets  //项目引用资源目录
+  dev     //静态资源开发目录
+  gulpfile.js   //gulpAPI文件
+```
+
+
 ##gulp的使用
 
 1. 安装node环境
