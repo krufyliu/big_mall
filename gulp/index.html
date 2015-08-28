@@ -4,18 +4,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="renderer" content="webkit">
     <title>index</title>
     <!--[if lt IE 9]>
       <script src="dist/js/error.min.js"></script>
     <![endif]-->
+   <!-- Styles -->
     <link rel="stylesheet" href="dist/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/css/font-awesome/font-awesome.min.css" />
     <link rel="stylesheet" href="dist/css/se7en-font/se7en-font.css" />
-    <link rel="stylesheet" href="dist/css/style/style.css" />
+    <link rel="stylesheet" href="dist/css/style/style.min.css" />
+    <link rel="stylesheet" href="dist/css/style/datatables.min.css" type="text/css" />
     <link rel="alternate stylesheet" href="dist/css/color/green.min.css" media="all"  title="green-theme" type="text/css" disabled="">
     <link rel="alternate stylesheet" href="dist/css/color/orange.min.css" media="all" title="orange-theme" type="text/css" disabled="">
     <link rel="alternate stylesheet" href="dist/css/color/magenta.min.css" media="all" title="magenta-theme" type="text/css" disabled="">
     <link rel="alternate stylesheet" href="dist/css/color/gray.min.css" media="all" title="gray-theme" type="text/css" disabled="">
+    <!-- End Styles -->
   </head>
 
   <body>
@@ -27,7 +31,7 @@
             <ul class="nav navbar-nav pull-right">
               <li class="dropdown notifications hidden-xs">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                  <span aria-hidden="true" class="se7en-flag"></span>
+                  <span><i class="fa fa-flag"></i></span>
                   <div class="sr-only">Notifications</div>
                   <p class="counter">4</p>
                 </a>
@@ -65,7 +69,7 @@
               </li>
               <li class="dropdown messages hidden-xs">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                  <span aria-hidden="true" class="se7en-envelope"></span>
+                  <span><i class="fa fa-bell"></i></span>
                   <div class="sr-only">Messages</div>
                   <p class="counter">3</p>
                 </a>
@@ -83,7 +87,7 @@
               </li>
               <li class="dropdown settings hidden-xs">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                  <span aria-hidden="true" class="se7en-gear"></span>
+                  <span><i class="fa fa-magic"></i></span>
                   <div class="sr-only">Settings</div>
                 </a>
                 <ul class="dropdown-menu">
@@ -115,7 +119,7 @@
                     <a href="#"><i class="fa fa-gear"></i>Account Settings</a>
                   </li>
                   <li>
-                    <a href="login1.html"><i class="fa fa-sign-out"></i>Logout</a>
+                    <a href="login.html"><i class="fa fa-sign-out"></i>Logout</a>
                   </li>
                 </ul>
               </li>
@@ -126,7 +130,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo" href="index-2.html">se7en</a>
+          <!--<a class="logo" href="index.html"><span><i class="fa fa-leaf"></i></span></a>-->
+          <a class="logo" href="#">
+            <span><i class="fa fa-leaf"></i></span>
+          </a>
           <form class="navbar-form form-inline col-lg-2 hidden-xs">
             <input class="form-control" placeholder="Search" type="text">
           </form>
@@ -135,134 +142,21 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li>
-                <a class="current" href="index-2.html"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>
-              </li>
-              <li>
-                <a href="social.html"><span aria-hidden="true" class="se7en-feed"></span>Social Feed</a>
+                <a class="current" href="#"><span><i class="fa fa-dashboard"></i></span>控制台</a>
               </li>
               <li class="dropdown">
-                <a data-toggle="dropdown" href="#"><span aria-hidden="true" class="se7en-star"></span>Features<b class="caret"></b></a>
+                <a data-toggle="dropdown" href="#"><span><i class="fa fa-gear"></i></span>系统设置<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="buttons.html">Buttons</a>
+                    <a href="#">角色管理</a>
                   </li>
                   <li>
-                    <a href="fontawesome.html">Font Awesome Icons</a>
-                  </li>
-                  <li>
-                    <a href="glyphicons.html">
+                    <a href="admin_user.html">
                       <span class="notifications label label-warning">New</span>
-                      <p>Glyphicons</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="components.html">Components</a>
-                  </li>
-                  <li>
-                    <a href="widgets.html">Widgets</a>
-                  </li>
-                  <li>
-                    <a href="typo.html">Typography</a>
-                  </li>
-                  <li>
-                    <a href="grid.html">Grid Layout</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" href="#">
-                  <span aria-hidden="true" class="se7en-forms"></span>Forms<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="form-components.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>Form Components</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="form-advanced.html">Advanced Forms</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" href="#">
-                  <span aria-hidden="true" class="se7en-tables"></span>Tables<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="tables.html">Basic tables</a>
-                  </li>
-                  <li>
-                    <a href="datatables.html">DataTables</a>
-                  </li>
-                  <li>
-                    <a href="datatables-editable.html">
-                      <div class="notifications label label-warning">New</div>
-                      <p>Editable DataTables</p>
+                      <p>用户管理</p>
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li>
-                <a href="charts.html"><span aria-hidden="true" class="se7en-charts"></span>Charts</a>
-              </li>
-              <li class="dropdown">
-                <a data-toggle="dropdown" href="#"><span aria-hidden="true" class="se7en-pages"></span>Pages<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="chat.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>Chat</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="calendar.html">Calendar</a>
-                  </li>
-                  <li>
-                    <a href="timeline.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>Timeline</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="login1.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>Login 1</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="login2.html">Login 2</a>
-                  </li>
-                  <li>
-                    <a href="signup1.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>Sign Up 1</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="signup2.html">Sign Up 2</a>
-                  </li>
-                  <li>
-                    <a href="invoice.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>Invoice</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="faq.html">
-                      <span class="notifications label label-warning">New</span>
-                      <p>FAQ</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="filters.html">Filter Results</a>
-                  </li>
-                  <li>
-                    <a href="404-page.html">404 Page</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="gallery.html"><span aria-hidden="true" class="se7en-gallery"></span>Gallery</a>
               </li>
             </ul>
           </div>
@@ -275,17 +169,27 @@
     <!-- Script -->
     <script type="text/javascript" src="dist/js/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="dist/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.easy-pie-chart.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.bootstrap.wizard.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.fancybox.pack.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.inputmask.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-fileupload.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-colorpicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/fullcalendar.min.js"></script>
     <script type="text/javascript" src="dist/js/styleswitcher.min.js"></script>
-    <script>
-      /*
-      # =============================================================================
-      #   Mobile Nav
-      # =============================================================================
-      */
-      $('.navbar-toggle').click(function() {
-        return $('body, html').toggleClass("nav-open");
-      });
-    </script>
+    <script type="text/javascript" src="dist/js/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="dist/js/daterange-picker.min.js"></script>
+    <script type="text/javascript" src="dist/js/fitvids.min.js"></script>
+    <script type="text/javascript" src="dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="dist/js/date.min.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
     <!-- End Script -->
   </body>
 

@@ -3,31 +3,31 @@ a {
   color: $magenta; }
 
 .navbar .container-fluid.top-bar form .form-control:focus {
-  border-color: $magenta; }
+  border-color: $magenta !important; }
 
 .navbar .container-fluid.top-bar .nav > li.open > a span, .navbar .container-fluid.top-bar .nav > li.active > a span, .navbar .container-fluid.top-bar .nav > li.open.active > a span {
-  color: $magenta; }
+  color: $magenta !important; }
 
 .navbar .container-fluid.main-nav .nav-collapse .nav > li a.current span {
-  color: $magenta; }
+  color: $magenta !important; }
 .navbar .container-fluid.main-nav .nav-collapse .nav > li a.current .caret {
-  border-top-color: $magenta; }
+  border-top-color: $magenta !important; }
 
 .navbar .container-fluid.main-nav .nav-collapse .nav > li > a.current {
-  color: $magenta; }
+  color: $magenta !important; }
 
 .widget-container .heading {
-  color: $magenta; }
+  color: $magenta !important; }
 
 .dropdown-menu li a:hover {
-  border-bottom-color: $magenta;
-  color: $magenta; }
+  border-bottom-color: $magenta !important;
+  color: $magenta !important; }
 
 .form-control:focus {
-  border-color: $magenta; }
+  border-color: $magenta !important; }
 
 .stats-container [class^="col-"] .number, .stats-container [class*="col-"] .number {
-  color: $magenta; }
+  color: $magenta !important; }
 
 .stats-container [class^="col-"] .number .icon, .stats-container [class*="col-"] .number .icon {
   background-position: left -114px; }
@@ -39,24 +39,24 @@ a {
     background-position: -150px -114px; }
 
 .task-widget input[type="checkbox"]:checked + .task-checkbox {
-  color: $magenta; }
+  color: $magenta !important; }
 
 .select2-container-active .select2-choice, .select2-container-active .select2-choices {
-  border-color: $magenta; }
+  border-color: $magenta !important; }
 
 .select2-container-multi.select2-container-active .select2-choices {
-  border-color: $magenta; }
+  border-color: $magenta !important; }
 
 .select2-drop-active {
-  border-color: $magenta; }
+  border-color: $magenta !important; }
 
 .dataTable th {
-  color: $magenta; }
+  color: $magenta !important; }
   .dataTable th.sorting:after {
-    border-top: 5px solid $magenta; }
+    border-top: 5px solid $magenta !important; }
   .dataTable th.sorting:before {
-    border-bottom: 5px solid $magenta; }
+    border-bottom: 5px solid $magenta !important; }
   .dataTable th.sorting_asc:after {
-    border-bottom: 5px solid $magenta; }
+    border-bottom: 5px solid $magenta !important; }
   .dataTable th.sorting_desc:after {
-    border-top: 5px solid $magenta; }
+    border-top: 5px solid $magenta !important; }
