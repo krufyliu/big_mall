@@ -3,31 +3,31 @@ a {
   color: $orange; }
 
 .navbar .container-fluid.top-bar form .form-control:focus {
-  border-color: $orange; }
+  border-color: $orange !important; }
 
 .navbar .container-fluid.top-bar .nav > li.open > a span, .navbar .container-fluid.top-bar .nav > li.active > a span, .navbar .container-fluid.top-bar .nav > li.open.active > a span {
-  color: $orange; }
+  color: $orange !important; }
 
 .navbar .container-fluid.main-nav .nav-collapse .nav > li a.current span {
-  color: $orange; }
+  color: $orange !important; }
 .navbar .container-fluid.main-nav .nav-collapse .nav > li a.current .caret {
-  border-top-color: $orange; }
+  border-top-color: $orange !important; }
 
 .navbar .container-fluid.main-nav .nav-collapse .nav > li > a.current {
-  color: $orange; }
+  color: $orange !important; }
 
 .widget-container .heading {
-  color: $orange; }
+  color: $orange !important; }
 
 .dropdown-menu li a:hover {
-  border-bottom-color: $orange;
-  color: $orange; }
+  border-bottom-color: $orange !important;
+  color: $orange !important; }
 
 .form-control:focus {
-  border-color: $orange; }
+  border-color: $orange !important; }
 
 .stats-container [class^="col-"] .number, .stats-container [class*="col-"] .number {
-  color: $orange; }
+  color: $orange !important; }
 
 .stats-container [class^="col-"] .number .icon, .stats-container [class*="col-"] .number .icon {
   background-position: left -76px; }
@@ -39,24 +39,24 @@ a {
     background-position: -150px -76px; }
 
 .task-widget input[type="checkbox"]:checked + .task-checkbox {
-  color: $orange; }
+  color: $orange !important; }
 
 .select2-container-active .select2-choice, .select2-container-active .select2-choices {
-  border-color: $orange; }
+  border-color: $orange !important; }
 
 .select2-container-multi.select2-container-active .select2-choices {
-  border-color: $orange; }
+  border-color: $orange !important; }
 
 .select2-drop-active {
-  border-color: $orange; }
+  border-color: $orange !important; }
 
 .dataTable th {
-  color: $orange; }
+  color: $orange !important; }
   .dataTable th.sorting:after {
-    border-top: 5px solid $orange; }
+    border-top: 5px solid $orange !important; }
   .dataTable th.sorting:before {
-    border-bottom: 5px solid $orange; }
+    border-bottom: 5px solid $orange !important; }
   .dataTable th.sorting_asc:after {
-    border-bottom: 5px solid $orange; }
+    border-bottom: 5px solid $orange !important; }
   .dataTable th.sorting_desc:after {
-    border-top: 5px solid $orange; }
+    border-top: 5px solid $orange !important; }

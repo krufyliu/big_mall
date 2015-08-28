@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="renderer" content="webkit">
+    <title>index</title>
+    <!--[if lt IE 9]>
+      <script src="dist/js/error.min.js"></script>
+    <![endif]-->
+    <!-- Styles -->
+    <link rel="stylesheet" href="dist/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/font-awesome/font-awesome.min.css" />
+    <link rel="stylesheet" href="dist/css/se7en-font/se7en-font.css" />
+    <link rel="stylesheet" href="dist/css/style/style.min.css" />
+    <link rel="stylesheet" href="dist/css/style/datatables.min.css" type="text/css" />
+    <link rel="alternate stylesheet" href="dist/css/color/green.min.css" media="all"  title="green-theme" type="text/css" disabled="">
+    <link rel="alternate stylesheet" href="dist/css/color/orange.min.css" media="all" title="orange-theme" type="text/css" disabled="">
+    <link rel="alternate stylesheet" href="dist/css/color/magenta.min.css" media="all" title="magenta-theme" type="text/css" disabled="">
+    <link rel="alternate stylesheet" href="dist/css/color/gray.min.css" media="all" title="gray-theme" type="text/css" disabled="">
+    <!-- End Styles -->
+  </head>
+
+  <body>
+    <div class="modal-shiftfix">
+      <!-- Navigation -->
+      <div class="navbar navbar-fixed-top scroll-hide" style="overflow: visible;">
+        <div class="container-fluid top-bar">
+          <div class="pull-right">
+            <ul class="nav navbar-nav pull-right">
+              <li class="dropdown notifications hidden-xs">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span><i class="fa fa-flag"></i></span>
+                  <div class="sr-only">Notifications</div>
+                  <p class="counter">4</p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">
+                      <div class="notifications label label-info">New</div>
+                      <p>New user added: Jane Smith</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="notifications label label-info">New</div>
+                      <p>Sales targets available</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="notifications label label-info">New</div>
+                      <p>New performance metric added</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="notifications label label-info">
+                        New
+                      </div>
+                      <p>
+                        New growth data available
+                      </p>
+                    </a>
+
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown messages hidden-xs">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span><i class="fa fa-bell"></i></span>
+                  <div class="sr-only">Messages</div>
+                  <p class="counter">3</p>
+                </a>
+                <ul class="dropdown-menu messages">
+                  <li>
+                    <a href="#"><img width="34" height="34" src="dist/img/avatar-male2.png">Could we meet today? I wanted...</a>
+                  </li>
+                  <li>
+                    <a href="#"><img width="34" height="34" src="dist/img/avatar-female.png">Important data needs your analysis...</a>
+                  </li>
+                  <li>
+                    <a href="#"><img width="34" height="34" src="dist/img/avatar-male2.png">Buy Se7en today, it's a great theme...</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown settings hidden-xs">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span><i class="fa fa-magic"></i></span>
+                  <div class="sr-only">Settings</div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="settings-link blue" href="javascript:chooseStyle('none', 30)"><span></span>Blue</a>
+                  </li>
+                  <li>
+                    <a class="settings-link green" href="javascript:chooseStyle('green-theme', 30)"><span></span>Green</a>
+                  </li>
+                  <li>
+                    <a class="settings-link orange" href="javascript:chooseStyle('orange-theme', 30)"><span></span>Orange</a>
+                  </li>
+                  <li>
+                    <a class="settings-link magenta" href="javascript:chooseStyle('magenta-theme', 30)"><span></span>Magenta</a>
+                  </li>
+                  <li>
+                    <a class="settings-link gray" href="javascript:chooseStyle('gray-theme', 30)"><span></span>Gray</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown user hidden-xs">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                  <img width="34" height="34" src="dist/img/ruby.png">John Smith<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"><i class="fa fa-user"></i>My Account</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-gear"></i>Account Settings</a>
+                  </li>
+                  <li>
+                    <a href="login.html"><i class="fa fa-sign-out"></i>Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="logo" href="index.html"><span><i class="fa fa-leaf"></i></span></a>-->
+          <a class="logo" href="#">
+            <span><i class="fa fa-leaf"></i></span>
+          </a>
+          <form class="navbar-form form-inline col-lg-2 hidden-xs">
+            <input class="form-control" placeholder="Search" type="text">
+          </form>
+        </div>
+        <div class="container-fluid main-nav clearfix">
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html"><span><i class="fa fa-dashboard"></i></span>控制台</a>
+              </li>
+              <li class="dropdown">
+                <a class="current" data-toggle="dropdown" href="#"><span><i class="fa fa-gear"></i></span>系统设置<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">角色管理</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="notifications label label-warning">New</span>
+                      <p>用户管理</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div class="main-content">
+        <div class="page-title">
+					<h1>用户列表</h1>
+				</div>
+				<!-- DataTables Example -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="widget-container fluid-height clearfix">
+							<div class="heading">
+								<i class="fa fa-table"></i>&nbsp;DataTable with Sorting
+							</div>
+							<div class="widget-content padded clearfix table-responsive">
+								<table class="table table-bordered" id="dataTable1">
+									<thead>
+										<th class="check-header">
+											<label><input id="checkAll" name="checkAll" type="checkbox"><span></span></label>
+										</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Email</th>
+										<th>Date Added</th>
+										<th>Status</th>
+										<th></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-warning">Pending</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-danger">Rejected</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-warning">Pending</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-danger">Rejected</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-warning">Pending</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-danger">Rejected</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-warning">Pending</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-danger">Rejected</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-warning">Pending</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-danger">Rejected</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="check">
+												<label>
+													<input name="optionsRadios1" type="checkbox" value="option1"><span></span></label>
+											</td>
+											<td>Robert</td>
+											<td>Kelso</td>
+											<td>robert@gmail.com</td>
+											<td>8-15-2013</td>
+											<td>
+												<span class="label label-success">Approved</span>
+											</td>
+											<td class="actions">
+												<div class="action-buttons">
+													<a class="table-actions" href="#"><i class="fa fa-eye"></i></a><a class="table-actions" href="#"><i class="fa fa-pencil"></i></a><a class="table-actions" href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end DataTables Example -->
+			</div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script type="text/javascript" src="dist/js/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.easy-pie-chart.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.bootstrap.wizard.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.fancybox.pack.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.inputmask.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-fileupload.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap/bootstrap-colorpicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="dist/js/styleswitcher.min.js"></script>
+    <script type="text/javascript" src="dist/js/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="dist/js/daterange-picker.min.js"></script>
+    <script type="text/javascript" src="dist/js/fitvids.min.js"></script>
+    <script type="text/javascript" src="dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="dist/js/date.min.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
+    <!-- End Script -->
+  </body>
+
+</html>

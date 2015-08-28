@@ -3,7 +3,7 @@ a {
   color: $gray; }
 
 .navbar .container-fluid.top-bar form .form-control:focus {
-  border-color: $gray; }
+  border-color: $gray !important; }
 
 .navbar .container-fluid.top-bar .nav > li.open > a span, .navbar .container-fluid.top-bar .nav > li.active > a span, .navbar .container-fluid.top-bar .nav > li.open.active > a span {
   color: #555555; }
@@ -11,23 +11,23 @@ a {
 .navbar .container-fluid.main-nav .nav-collapse .nav > li a.current span {
   color: #333; }
 .navbar .container-fluid.main-nav .nav-collapse .nav > li a.current .caret {
-  border-top-color: $gray; }
+  border-top-color: $gray !important; }
 
 .navbar .container-fluid.main-nav .nav-collapse .nav > li > a.current {
   color: #333; }
 
 .widget-container .heading {
-  color: $gray; }
+  color: $gray !important; }
 
 .dropdown-menu li a:hover {
-  border-bottom-color: $gray;
-  color: $gray; }
+  border-bottom-color: $gray !important;
+  color: $gray !important; }
 
 .form-control:focus {
-  border-color: $gray; }
+  border-color: $gray !important; }
 
 .stats-container [class^="col-"] .number, .stats-container [class*="col-"] .number {
-  color: $gray; }
+  color: $gray !important; }
 
 .stats-container [class^="col-"] .number .icon, .stats-container [class*="col-"] .number .icon {
   background-position: left -152px; }
@@ -39,24 +39,24 @@ a {
   background-position: -150px -152px; }
 
 .task-widget input[type="checkbox"]:checked + .task-checkbox {
-  color: $gray; }
+  color: $gray !important; }
 
 .select2-container-active .select2-choice, .select2-container-active .select2-choices {
-  border-color: $gray; }
+  border-color: $gray !important; }
 
 .select2-container-multi.select2-container-active .select2-choices {
-  border-color: $gray; }
+  border-color: $gray !important; }
 
 .select2-drop-active {
-  border-color: $gray; }
+  border-color: $gray !important; }
 
 .dataTable th {
-  color: $gray; }
+  color: $gray !important; }
   .dataTable th.sorting:after {
-    border-top: 5px solid $gray; }
+    border-top: 5px solid $gray !important; }
   .dataTable th.sorting:before {
-    border-bottom: 5px solid $gray; }
+    border-bottom: 5px solid $gray !important; }
   .dataTable th.sorting_asc:after {
-    border-bottom: 5px solid $gray; }
+    border-bottom: 5px solid $gray !important; }
   .dataTable th.sorting_desc:after {
-    border-top: 5px solid $gray; }
+    border-top: 5px solid $gray !important; }
