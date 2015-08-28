@@ -22,7 +22,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Noto Sans', "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
   color: #666666;
   background: #e8e8e8;
   padding-top: 140px;
@@ -32,7 +32,7 @@ body {
   padding-bottom: 20px; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Noto Sans', "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
   margin: 0 0 15px;
   font-weight: 300; }
 
@@ -2634,7 +2634,7 @@ button.close {
   background: white;
   padding: 10px 12px;
   border: 1px solid #cccccc;
-  font-family: 'Noto Sans', "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
   font-weight: 300;
   border-radius: 5px;
   -webkit-transition: border 0.3s;
@@ -2950,7 +2950,7 @@ body.fourofour {
             .navbar .container-fluid.main-nav .nav-collapse .nav > li > a span {
               display: block;
               float: left;
-              margin: 8px 15px 0 0;
+              margin: 0px 15px 0 0;
               background-position: left -140px; }
             .navbar .container-fluid.main-nav .nav-collapse .nav > li > a .caret {
               display: none; }
