@@ -2,9 +2,9 @@
 
 ##目录结构说明
 ```js
-  assets  //项目引用资源目录
-  dev     //静态资源开发目录
-  dist    //静态资源引用目录
+  /assets  //项目引用资源目录
+  /dev     //静态资源开发目录
+  /dist    //静态资源引用目录
   gulpfile.js   //gulpAPI文件
 ```
 
@@ -61,7 +61,7 @@
 1.各个小模块以下划线开头全小写命名，多单词以 `-` 符号分隔，总模块正常以该模块文件夹命名，在其中导入需要的小模块(详细规则请查看font-awesome的scss源码)，例：
 
 ```js
-  font-awesome
+  /font-awesome
     _animated.scss
     _bordered-pulled.scss
     _core.scss
